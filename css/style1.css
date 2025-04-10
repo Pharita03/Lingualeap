@@ -1,0 +1,823 @@
+*{
+    margin: 0; padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: .2s linear;
+
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background:white;
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+}
+.box1{
+  height: 80px;
+  
+}
+
+.logo{
+  position: absolute;
+  left: 5rem;
+}
+header .box1 button{
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  font-size: 35px;
+  background-color:white; 
+  height:40px;
+  width:70px; 
+  border: none;
+}
+header .box2 .navbar .search{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 35px; 
+  background-color: #ffffff;
+  border: none;
+  
+}
+header .box2 .navbar .search button{
+  background-color: #ffffff;
+}
+header .navbar a{
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+header .navbar a:hover{
+    color: orange;
+    font-size: 1.2rem;
+}
+
+
+header .navbar .btn{
+    padding: 10px 40px;
+    border-radius: 2rem;
+    background-color: orange;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+header .navbar .btn:hover {
+    background: #FFF;
+    color: orange;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+  }
+
+
+menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 220px;
+    height: 100%;
+    padding-top: 10rem;
+    background: #ffffff;
+    box-shadow:  0 -1px 1rem 0 rgba(0,0,0,.3)
+  }
+  
+  menu li a {
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    margin: 0 10px;
+    padding: 15px 2rem;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  menu li a:hover {
+    background: #ababab1b;
+    color: orange;
+    border-radius: 20px;
+  }
+  menu li i{
+    margin-right: 15px;
+    
+  }
+/*_________________________________________Mainhome________________________________________*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  right: 0;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+ 
+}
+main .easywaytolearn{
+  position: relative;
+  left: 100vh;
+}
+main .mainbox{
+  display: flex;
+  flex-flow:wrap row ;
+  position: relative;
+  margin-top: 6.5rem;
+  margin-bottom: 100%;
+  width: 100%;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+main .mainbox .box3{
+  background: #dfdfdf;
+  display: flex;
+  position: absolute;
+  margin-bottom: 5rem;
+  height: 20rem;
+  width: 100%;
+  padding: 5rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  
+}
+
+main .mainbox .couse{
+  display: flex;
+  background-color: #ffffff;
+  flex-flow: row wrap;
+  margin-top: 20rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 10rem;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+}
+main .mainbox .couse .box4{
+  display: flex;
+  position: relative;
+  padding: 0 2rem;
+  width: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+main .mainbox .couse .box4 button{
+  background-color:white;
+  font-size: 1rem;
+  padding: .5rem;
+  width: 100%;
+  height: 100%;
+}
+main .mainbox .couse .box4 button h3{
+  color: #000000;
+}
+main .mainbox .couse .box4 button:hover{
+  background-color: #54f37e;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: .5rem;
+  color: #ffffff;
+  width: 10rem;
+  height: 100%;
+}
+main .mainbox .couse .box4 button h3:hover{
+  color: #ffffff;
+ }
+/*_________________________________________main allcouse________________________________*/
+main .couse{
+  margin-top: 5rem;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: #edebeb;
+}
+
+main .couse .situation{
+  display:flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  background-color: #ffffff;
+  
+}
+main .couse .situation li{
+  display: inline-flex;
+  padding-left: 2rem;
+  list-style: none;
+  font-weight: 600;
+}
+
+main .couse .situation li:hover{
+  color: #54f37e;
+}
+main .couse .allunit{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  gap: 5rem;
+}
+
+
+main .couse .Unit{
+  background-color: #ffffff;
+  border-radius: 2rem;
+  width: 20rem;
+  height: 25rem;
+  justify-items: center;
+
+}
+main .couse .Unit .imgunit{
+  height: 15rem;
+  width: 20rem;
+  border-radius: 2rem;
+}
+
+main .couse .Unit h3{
+  font-weight: 400;
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  padding-left: 30px;
+}
+main .couse .Unit h3 a{
+  color: #000000;
+  text-decoration: none;
+}
+main .couse .Unit h4{
+  font-weight: 400;
+  font-size: 1.3rem;
+  display: flex;
+  color: #dfdfdf;
+  width: 100%;
+  padding-left: 30px;
+}
+
+/*_________________________________________main unit1________________________________________*/
+main .all{
+  border: 1px solid black;
+  margin-top: 5rem;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #edebeb;
+}
+
+main .all .nameunit{
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: #dfdfdf;
+
+}
+main .all .subbox{
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content:space-evenly;
+
+
+}
+main .all .subbox .subunit{
+
+  width: 60%;
+  display: flex;
+
+}
+main .all .subbox .subunit ul li{
+  width: 45rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main .all .subbox .subunit li{
+  border: 1px solid #000000;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  width: 100%;
+  height: 5rem;
+  text-decoration:none;
+  list-style: none;
+  color: #000000;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+main .all .subbox .subunit li a{
+  color: #000000;
+  text-decoration:none;
+  width: 100%;
+}
+main .all .subbox .subunit li a:hover{
+  color: orange;
+  text-decoration:none;
+}
+main .all .subbox .detail{
+  border: 1px solid black;
+}
+main .all .subbox .detail h3{
+  margin: 2rem;
+  font-weight: 500;
+}
+main .all .subbox .detail ul li{
+  list-style: none;
+  margin: 1rem;
+}
+/*_________________________________________main unit1 reading________________________________________*/
+
+main .reading{
+  border: 1px solid black;
+  margin-top: 5rem;
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #edebeb;
+}
+main .reading .Box5{
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-evenly;
+  gap:3rem;
+  height: 30rem;
+}
+main .reading .Box5 .VDO{
+  width: 40rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-right: 1.2rem;
+}
+main .reading .Box5 .VDO .subbox{
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+main .reading .Box5 .VDO .subbox h3{
+  font-weight: 500;
+  padding-bottom: .5rem;
+}
+main .reading .Box5 .subdetail{
+  background-color: #ffffff;
+  width: 30rem;
+
+}
+main .reading .Box5 .subdetail h3{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-weight: 300;
+}
+main .reading .Test .btn{
+  color: #ffffff;
+  background-color: orange;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 2rem;
+  font-size: larger;
+}
+main .reading .Test .btn:hover{
+  color: orange;
+  background-color: white;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+}
+
+main .reading .ready{
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+main .reading .ready .Test{
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 6rem;
+  justify-content: space-between;
+}
+main .reading .ready .Test .btn{
+  color: #ffffff;
+  background-color: orange;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 2rem;
+  
+}
+main .reading .ready .Test .btn:hover{
+  color: orange;
+  background-color: white;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+}
+main .reading .question {
+  grid-template-columns: auto auto;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  justify-content:space-evenly;
+}
+main .reading .question .image{
+  margin: 2rem;
+}
+main .reading .question .image img{
+  width: 23rem;
+  height: 18rem;
+  margin: 2rem;
+}
+main .reading .question .quiz{
+  background-color:white;
+  width: 100%;
+  height: 100%;
+  margin-right: 10rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+main .reading .question .quiz .box5{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color:orange;
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+}
+main .reading .question .quiz .box5 h4{
+  color: #ffffff;
+  font-size: larger;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+main .reading .question .quiz .box5 li{
+  list-style: none;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  margin: 1rem;
+  height: 3rem;
+  width: 25rem;
+  justify-content: center;
+  align-items: center;
+}
+main .reading .question .quiz .box5 li:hover{
+  background-color: #dfdfdf;
+}
+
+/*_________________________________________main unit1 vocabulary________________________________________*/
+
+.volcab .voc .excer{
+  border: 1px solid black;
+  display: grid;
+  margin: .5rem;
+  width: 50rem;
+  height: 40rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.voc .excer .vol{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  font-size: 4rem;
+  margin: .5rem;
+  margin-top: 3rem;
+}
+.volcab .voc .excer .meaning {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: .5rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.volcab .voc .excer .sample {
+  font-size: large;
+  font-weight: 400;
+  margin: .5rem;
+  margin-top: 3rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+}
+.volcab .voc .btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 2rem;
+  width: 30%;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  bottom: 3rem;
+  left: 16rem;
+}
+.volcab .voc .btn button{
+  display: flex;
+  justify-content: center;
+  width: 6rem;
+  height: 3rem;
+  color: #ffffff;
+  background-color: orange;
+  text-align: center;
+  align-items: center;
+
+}
+.volcab .voc .btn button:hover{
+  color: orange;
+  background-color: white;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+}
+.voc .excer .voice{
+  display: flex;
+
+}
+
+
+/*_________________________________________main unit1 listening________________________________________*/
+main .listening{
+  margin-top: 5rem;
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #edebeb;
+}
+main .listening .Box5{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap:3rem;
+  height: 30rem;
+  margin-bottom: 5rem;
+}
+main .listening .Box5 .VDO{
+  width: 50rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-right: 1rem;
+}
+main .listening .Box5 .VDO video{
+  display: flex;
+  position: relative;
+  bottom: 3rem;
+}
+main .listening .Box5 .VDO h3{
+  font-weight: 500;
+}
+main .listening .Box5 .subdetail{
+  background-color: #ffffff;
+  width: 20rem;
+}
+main .listening .Box5 .subdetail h3{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-weight: 400;
+}
+main .listening .Box5 .subdetail .detail{
+  padding-top: 1rem;
+  font-weight: 300;
+}
+main .listening .Box5 .subdetail .detail h3{
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+main .listening .Box5 .subdetail .detail ul li{
+  padding-left: 1rem;
+  list-style: none;
+}
+main .listening .Test{
+  background-color: #FFF;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  width: 30rem;
+  border: 1px solid black;
+  margin-bottom: 5rem;
+}
+main .listening .Test h3{
+  font-weight: 500;
+}
+main .listening .Test .btn{
+  color: #ffffff;
+  background-color: orange;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 2rem;
+  font-size: larger;
+}
+main .listening .Test .btn:hover{
+  color: orange;
+  background-color: white;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+}
+
+
+/*_________________________________________main tunit1 listening________________________________________*/
+
+main .Test{
+  margin-top: 5rem;
+  height: 100%;
+  width: 100%;
+  background-color: #edebeb;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+main .Test h3{
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+main .Test1{
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  border: 1px solid rgb(0, 0, 0);
+  height: 25rem;
+  width: 50rem;
+  margin: 3rem;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+main .Test1 .detail{
+  margin: 3rem;
+  font-size: 1.5rem;
+}
+main .Test1 .detail h4{
+  font-weight: 500;
+}
+main .Test1 button{
+  height: 3rem;
+  width: 10rem;
+  border-radius: 3rem;
+  color: #ffffff;
+  background-color: orange;
+
+}
+main .Test1 button:hover{
+  color:orange;
+  background-color: white;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+}
+main .audio{
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+main .audio .detail h4{
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.question{
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  width: 50rem;
+  height: 40rem;
+  border: 1px solid black;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.question .img img{
+  width: 20rem; 
+  height: 20rem;
+}
+.options{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 2rem;
+  column-gap: 3rem;
+  justify-content: space-evenly;
+  margin-top: .5rem;
+  width: 100%;
+
+}
+.options label{
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  margin-left: 2rem;
+  padding: .5rem;
+  align-items: center;
+  box-shadow: 0 .1rem 0 rgba(0, 0, 0, 0.312);
+}
+.options label:hover{
+  background-color: orange;
+  color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+.nav-buttons{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom:50px;
+  margin-left: 2rem;
+}
+.nav-buttons button{
+  background-color: orange;
+  color: #ffffff;
+  width: 8rem;
+  height:3rem;
+  font-size: 1rem;
+  border-radius: 3rem;
+}
+.nav-buttons button:hover{
+  background-color: #ffffff;
+  color: orange;
+  box-shadow: 0 .1rem 0 rgba(0, 0, 0, 0.312);
+}
+
+/*_________________________________________Footer________________________________________*/
+footer{
+  background-color: #dfdfdf;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-content: center;
+  justify-items: center;
+  border: 1px solid black;
+  
+}
+footer .end{
+  display: flex;
+  position:absolute;
+  left: 50vh;
+  
+}
+footer .end li{
+  list-style: none;
+  display: inline-flex; 
+  gap: 10px; 
+  position: relative;
+  top: 30px;
+  padding: 0 2rem;
+  left: 30vh;
+}
+footer .end li h3{
+  font-weight: 500;
+}

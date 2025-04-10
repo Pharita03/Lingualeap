@@ -1,0 +1,1872 @@
+*{
+    margin: 0; padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: .2s linear;
+    background-size: cover;
+}
+:root{
+  --lightgrey:#ededed;
+  --grey : #ffffff;
+  --shadygrey : #bbbbbb;
+  --green : #54f37e;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background:white;
+    padding: .2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .1rem 1rem rgba(72, 72, 72, 0.312);
+}
+.box1{
+  height: 80px;
+}
+.box3 {
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  background-image: url("../image/welcomelingualeap.png");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 80px;
+}
+.logo{
+  position: absolute;
+  left: 6rem;
+}
+header .box1 button{
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  font-size: 35px;
+  background-color:rgb(255, 255, 255); 
+  height:40px;
+  width:70px; 
+  border: none;
+}
+header .box2 .navbar .search{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 35px; 
+  background-color: #ffffff;
+  border: none;
+}
+header .box2 .navbar .search button{
+  background-color: #ffffff;
+}
+header .navbar a{
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+header .navbar a:hover{
+    color: orange;
+    font-family: Poppins;
+}
+header .navbar .btn{
+    padding: 10px 40px;
+    border-radius: 2rem;
+    background-color: orange;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+header .navbar .btn:hover {
+    background: #FFF;
+    color: orange;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+  }
+menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 220px;
+    height: 100%;
+    padding-top: 10rem;
+    background: #ffffff;
+    box-shadow:  0 -1px 1rem 0 rgba(87, 86, 86, 0.3)
+  }
+  
+  menu li a {
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    margin: 0 10px;
+    padding: 15px 2rem;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  menu li a:hover {
+    background: #ababab1b;
+    color: orange;
+    border-radius: 10px;
+  }
+  menu li i{
+    margin-right: 15px;
+    
+  }
+/*_________________________________________Mainhome________________________________________*/
+.index {
+  width: 100%;
+  height: 100%;
+  background-color: #ebe9e9;;
+}
+
+.index .mainbox {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.index .mainbox .box3 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/indexweb.jpg");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.course {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 30px; /* เพิ่มระยะห่างระหว่าง box3 กับการ์ด */
+}
+
+.box4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  margin-top: 80px;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card.selected {
+  background-color: #0e975e;  /* สีเขียวเมื่อเลือก */
+  color: white;
+}
+
+.card i {
+  font-size: 40px;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;  /* ให้ลิงค์ใช้สีจากการ์ด */
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.home .mainbox .box3 .h3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.home .mainbox .course {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 70%;
+  height: auto;
+  align-items: center;
+  margin-top: 50px; /* เพิ่มระยะห่างระหว่าง box3 และ card */
+}
+
+.home .mainbox .course .box4 a h3 {
+  text-decoration: none;
+  color: #000000;
+}
+
+.home .mainbox .course .box4 a h3:hover {
+  color: var(--green);
+}
+
+.home .mainbox .course .box4 button {
+  height: 3rem;
+  width: 7rem;
+  background-color: #ffffff;
+}
+
+.home .mainbox .course .box4 button:hover {
+  background-color: var(--green);
+}
+
+/*_________________________________________main allcouse________________________________*/
+.allcourse {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  padding-top: 2rem !important;
+}
+
+.allcourse .couse {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  width: 90%; /* ปรับให้ไม่เต็มจอเกินไป */
+  max-width: 1200px;
+  margin-left: 1px;
+}
+
+.allcourse .couse .text {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-left: left;
+}
+
+.allcourse .couse .text h3 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: start;
+  margin-top: 80px;
+  justify-content: left;
+}
+
+.allcourse .couse .allunit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ปรับให้ responsive */
+  row-gap: 1.5rem;
+  column-gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ทำให้รองรับมือถือ */
+@media (max-width: 768px) {
+  .allcourse .couse .allunit {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* เรียงคอลัมน์เมื่อจอเล็ก */
+  }
+  
+  .allcourse .couse {
+    width: 95%;
+  }
+
+  .allcourse .couse .text h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+
+/*_________________________________________allcouse unit1________________________________________*/
+.allcourse .couse .allunit .Unit1{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(..//image/unit1.jpg);
+  background-size: cover;
+  justify-content: space-between;
+  align-items: start;
+}
+.allcourse .couse .allunit .Unit1:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.allcourse .couse .allunit .Unit1 .imgunit{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover ;
+}
+.allcourse .couse .allunit .Unit1 h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.allcourse .couse .allunit .Unit1 h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________allcouse unit2________________________________________*/
+.allcourse .couse .allunit .Unit2{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(..//image/unit2.jpg);
+  background-size: cover;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.allcourse .couse .allunit .Unit2:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.allcourse .couse .allunit .Unit2 .imgunit{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover ;
+}
+.allcourse .couse .allunit .Unit2 h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.allcourse .couse .allunit .Unit2 h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________allcouse unit3________________________________________*/
+.allcourse .couse .allunit .Unit3{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(..//image/unit3.jpg);
+  background-size: cover;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.allcourse .couse .allunit .Unit3:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.allcourse .couse .allunit .Unit3 .imgunit{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover ;
+}
+.allcourse .couse .allunit .Unit3 h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.allcourse .couse .allunit .Unit3 h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________allcouse unit4________________________________________*/
+.allcourse .couse .allunit .Unit4{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(..//image/unit4.jpg);
+  background-size: cover;
+  justify-content: space-between;
+  align-items: start;
+}
+.allcourse .couse .allunit .Unit4:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.allcourse .couse .allunit .Unit4 .imgunit{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover ;
+}
+.allcourse .couse .allunit .Unit4 h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.allcourse .couse .allunit .Unit4 h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________allcouse unit5________________________________________*/
+.allcourse .couse .allunit .Unit5{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(..//image/unit5.jpg);
+  background-size: cover;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.allcourse .couse .allunit .Unit5:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.allcourse .couse .allunit .Unit5 .imgunit{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover ;
+}
+.allcourse .couse .allunit .Unit5 h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.allcourse .couse .allunit .Unit5 h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________main alltest________________________________*/
+.alltest{
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  padding-top: 2rem !important;
+}
+.alltest .couse{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  width: 90%; /* ปรับให้ไม่เต็มจอเกินไป */
+  max-width: 1200px;
+  margin-left: 1px;
+}
+.alltest .couse .text{
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-left: left;
+}
+.alltest .couse .text h3{
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: start;
+  margin-top: 80px;
+  justify-content: left;
+}
+.alltest .couse .allunit{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ปรับให้ responsive */
+  row-gap: 1.5rem;
+  column-gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+/* ทำให้รองรับมือถือ */
+@media (max-width: 768px) {
+  .alltest .couse .allunit {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* เรียงคอลัมน์เมื่อจอเล็ก */
+  }
+  
+  .alltest .couse {
+    width: 95%;
+  }
+
+  .alltest .couse .text h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+
+
+/*_________________________________________alltest unit1________________________________________*/
+.alltest .couse .allunit .Unit1{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(..//image/testunit1.jpg);
+  background-size: cover;
+  justify-content: space-between;
+  align-items: start;
+}
+.alltest .couse .allunit .Unit1:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.alltest .couse .allunit .Unit1 .imgunit{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover ;
+}
+.alltest .couse .allunit .Unit1 h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.alltest .couse .allunit .Unit1 h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________alltest unit2________________________________________*/
+.alltest .couse .allunit .Unit2{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(..//image/testunit2.jpg);
+  background-size: cover;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.alltest .couse .allunit .Unit2:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.alltest .couse .allunit .Unit2 .imgunit{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover ;
+}
+.alltest .couse .allunit .Unit2 h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.alltest .couse .allunit .Unit2 h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________alltest unit3________________________________________*/
+.alltest .couse .allunit .Unit3{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(..//image/testunit3.jpg);
+  background-size: cover;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.alltest .couse .allunit .Unit3:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.alltest .couse .allunit .Unit3 .imgunit{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover ;
+}
+.alltest .couse .allunit .Unit3 h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.alltest .couse .allunit .Unit3 h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________alltest unit4________________________________________*/
+.alltest .couse .allunit .Unit4{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(..//image/testunit4.jpg);
+  background-size: cover;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.alltest .couse .allunit .Unit4:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.alltest .couse .allunit .Unit4 .imgunit{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover ;
+}
+.alltest .couse .allunit .Unit4 h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.alltest .couse .allunit .Unit4 h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________alltest unit5________________________________________*/
+.alltest .couse .allunit .Unit5{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(..//image/testunit5.jpg);
+  background-size: cover;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.alltest .couse .allunit .Unit5:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.alltest .couse .allunit .Unit5 .imgunit{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover ;
+}
+.alltest .couse .allunit .Unit5 h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.alltest .couse .allunit .Unit5 h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________main unit1________________________________________*/
+.unit1{
+  width: 100%;
+  height: 50vh;
+  background-color: var(--white);
+}
+.unit1 .all{
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  margin-top: 38px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-size: cover;
+}
+.unit1 .all .nameunit{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background-image: url("../image/welcomelingualeap.png");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #ffffff;
+}
+.unit1 .all .subbox {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.unit1 .all .subbox h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--Black);
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .unit1 .all .subbox h2 {
+    font-size: 2.5rem;
+  }
+}
+.unit1 .all .subbox .subunit ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}
+
+.unit1 .all .subbox .subunit ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 250px; /* ขนาดการ์ด */
+  height: 150px;
+  border-radius: 15px;
+  border: 1px solid var(--grey);
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.unit1 .all .subbox .subunit ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.unit1 .all .subbox .subunit ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+
+.unit1 .all .subbox .subunit ul li a i {
+  font-size: 3rem; /* ขนาดไอคอน */
+  margin-bottom: 0.5rem;
+  color: var(--green);
+}
+
+@media (max-width: 768px) {
+  .unit1 .all .subbox .subunit ul li {
+    width: 200px;
+    height: 130px;
+  }
+
+  .unit1 .all .subbox .subunit ul li a {
+    font-size: 1.2rem;
+  }
+
+  .unit1 .all .subbox .subunit ul li a i {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .unit1 .all .subbox .subunit ul li {
+    width: 100%;
+    height: 100px;
+  }
+
+  .unit1 .all .subbox .subunit ul li a {
+    font-size: 1rem;
+  }
+
+  .unit1 .all .subbox .subunit ul li a i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .unit1 .all .nameunit h2 {
+    font-size: 2rem;
+  }
+}
+
+/*_________________________________________main unit1 Vocabulary________________________________________*/
+.unit1 .all .subbox .subunit .Vocabulary {
+  display: flex;
+  flex-direction: column;
+  background-size: auto;
+  border-radius: 1.5rem;
+  height: 20rem;
+  width: 20rem;
+  gap: 1rem;
+  justify-content: space-between;
+  background-image: url(..//image/vocabulary.png);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  align-items: start;
+  padding: 1rem;
+  position: relative;
+}
+
+.unit1 .all .subbox .subunit .Vocabulary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.unit1 .all .subbox .subunit .Vocabulary h3 {
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+
+.unit1 .all .subbox .subunit .Vocabulary h4 {
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+
+/* New styles for button container */
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 48%;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .unit1 .all .subbox .subunit .Vocabulary {
+      width: 100%;
+      height: auto;
+      padding: 0.5rem;
+  }
+  .btn-container {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+  }
+  .btn {
+      width: 80%;
+  }
+}
+
+/*_________________________________________main unit1 Grammar________________________________________*/
+.unit1 .all .subbox .subunit .Grammar{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  height: 20rem;
+  width: 20rem;
+  gap: 1rem;
+  justify-content: space-between;
+  background-image: url(..//image/grammar.png);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  align-items: start;
+}
+
+.unit1 .all .subbox .subunit .Grammar:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.unit1 .all .subbox .subunit .Grammar h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.unit1 .all .subbox .subunit .Grammar h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________main unit1 Listening________________________________________*/
+.unit1 .all .subbox .subunit .Listening{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  height: 20rem;
+  width: 20rem;
+  gap: 1rem;
+  justify-content: space-between;
+  background-image: url(..//image/listening.png);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  align-items: start;
+}
+
+.unit1 .all .subbox .subunit .Listening:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.unit1 .all .subbox .subunit .Listening h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.unit1 .all .subbox .subunit .Listening h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________main unit1 Reading________________________________________*/
+.unit1 .all .subbox .subunit .Reading{
+  display: flex;
+  flex-direction: column;
+  background-size:auto;
+  border-radius: 1.5rem;
+  height: 20rem;
+  width: 20rem;
+  gap: 1rem;
+  justify-content: space-between;
+  background-image: url(..//image/reading.png);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  align-items: start;
+}
+
+.unit1 .all .subbox .subunit .Reading:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.unit1 .all .subbox .subunit .Reading h3{
+  text-decoration: none;
+  color: #7c7c7c;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}
+.unit1 .all .subbox .subunit .Reading h4{
+  display: flex;
+  position: relative;
+  top: 1rem;
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  color: var(--shadygrey);
+}
+/*_________________________________________main unit1 grammar listening________________________________________*/
+/* ปรับโครงสร้างของ grammar */
+.grammar {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+/* แบนเนอร์ที่อยู่ด้านบน */
+.grammar .Box5 .bannerGrammar {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background-image: url("../image/welcomegrammar.png");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  background-color: #ffffff;
+}
+
+/* จัดกล่องหลัก */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* ดีเทลและปุ่มดาวน์โหลด */
+.subdetail {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: left; /* ชิดซ้าย */
+}
+
+.subdetail h2 {
+  font-weight: 500;
+  font-size: 2rem; /* ปรับขนาดตัวอักษรให้ใหญ่ขึ้น */
+  margin-bottom: 10px;
+}
+
+/* ปรับปุ่มดาวน์โหลด */
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px; /* ป้องกันไม่ให้ปุ่มใหญ่เกินไป */
+  padding: 12px;
+  font-size: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.download-btn i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+/* จัดวิดีโอให้เต็มจอ */
+.VDO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ebe9e9;
+  overflow: hidden;
+}
+
+
+/* ปรับขนาดสำหรับมือถือ */
+@media (max-width: 768px) {
+  .subdetail h2 {
+      font-size: 1.5rem;
+  }
+
+  .download-btn {
+      width: 100%;
+  }
+}
+
+.grammar .Box5 .bannerReading {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.grammar .Box5 .bannerReading {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background-image: url("../image/welcomereading.png");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+.grammar .Box5 .bannerlistening {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.grammar .Box5 .bannerlistening {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background-image: url("../image/welcomelistening.png");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+
+/*_________________________________________main unit1 vocabulary________________________________________*/
+.volcab{
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+}
+.volcab .boxvol{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  margin-top: 7rem;
+  width: 100%;
+  height: 30rem;
+}
+
+
+.volcab .boxvol .box5 .bannervolcab {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 50%;
+  background-color: #ebe9e9;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.volcab .boxvol .box5 .bannervolcab {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background-image: url("../image/welcomevocab.png");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+.volcab .boxvol .Box5{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.volcab .boxvol .Box5 .VDO {
+  width: 100%;
+  height: 200%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-size: contain;
+  background-position: center;
+  flex-direction: column;
+  background-image: url("../image/welcomevocab (2).jpg");
+  word-wrap: break-word;
+  position: relative;
+}
+.volcab .boxvol .Box5 .VDO .Test{
+  display: flex;
+  position: relative;
+}
+
+.volcab .boxvol .Box5 .VDO .Test .bg{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+.volcab .boxvol .Box5 .VDO .Test h3{
+  font-size: 2vw;
+  color: var(--shadygrey);
+  font-weight: 500;
+}
+.volcab .boxvol .Box5 .VDO .Test .btn{
+  background-color: white;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 20rem;
+  position: relative;
+  bottom: -200%;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+  cursor: pointer;
+  h2{
+    color: orange;
+  }
+}
+.volcab .boxvol .subdetail h2{
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin-right: 2rem;
+}
+.volcab .boxvol .subdetail h3{
+  color: #ffffff;
+  font-weight: 500;
+}
+.boxvol .voc{
+  width: 100% ;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.boxvol .voc .excer{
+  width: 100%;
+  height: 150%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../image/bgunit.png");
+  background-size: cover;
+}
+.hidden{
+  display: none;
+}
+.boxvol .voc .excer .vol{
+  font-size: 10vh;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.boxvol .voc .excer .meaning{
+  font-size: 3vh;
+  font-weight: 400;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  
+}
+.boxvol .voc .excer .sample{
+  font-size: 2vh;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+
+  margin: 2rem;
+}
+.boxvol .voc .excer audio{
+  display: flex;
+  margin: 2rem;
+}
+.boxvol .voc .btnn{
+  display: flex;
+  grid-template-columns: auto auto;
+  column-gap: 70%;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  bottom: 5%;
+}
+.boxvol .voc .btnn .btn{
+  background-color: var(--green);
+  width: 7rem;
+  height: 3rem;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.boxvol .voc .btnn .btn:hover{
+  background-color: orange;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+  h2{
+    color: rgb(255, 255, 255);
+  }
+}
+
+/*_________________________________________main test unit1 reading________________________________________*/
+.exam{
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+}
+.exam main{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  margin-top: 7rem;
+  width: 100%;
+  height: 30rem;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.exam main .Test{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: #ffffff;
+}
+.exam main .Test h3{
+  margin: 2rem;
+  font-size: 10vw;
+  color: var(--shadygrey);
+}
+.exam main .Test h4{
+  margin: 1rem;
+  font-size: 1vw;
+  color: var(--shadygrey);
+}
+.exam main .Test .Test1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.exam main .Test .Test1 .detail{
+  margin: 1rem;
+}
+.exam main .Test .Test1 .btn{
+  background-color: orange;
+  height: 3rem;
+  width: 20vh;
+  border-radius: 3rem;
+  h2{
+    color: #ffffff;
+  }
+}
+.exam main .Test .Test1 .btn:hover{
+  background-color:  #ffffff;
+  box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.312);
+  h2{
+    color:orange;
+  
+  }
+}
+.exam main .quiz-container{
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+  margin-top: 2rem;
+}
+.exam main .quiz-container .timer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  background-color: orange; /* เพิ่มพื้นหลังสีส้ม */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  align-items: center;
+  color: white; /* ให้ตัวอักษรเป็นสีขาวเพื่อความอ่านง่าย */
+}
+
+.exam main .quiz-container .timer::before {
+  content: "🕐"; /* ใช้ Unicode สำหรับไอคอนนาฬิกา */
+  margin-right: 0.5rem;
+}
+
+.exam main .quiz-container form {
+  display: grid;
+  justify-items: center;
+  height: 75%;
+}
+
+.exam main .quiz-container .question {
+  margin: 2rem;
+  height: 95%;
+}
+
+.exam main .quiz-container .question p {
+  font-size: 3vh;
+  margin-bottom: 2rem;
+  border: 2px solid gray; /* เพิ่มขอบสีเทา */
+  padding: 1rem;
+  border-radius: 8px; /* ทำให้ขอบโค้งเล็กน้อย */
+}
+
+.exam main .quiz-container .nav-buttons{
+  width: 80%;
+  display: flex;
+  grid-template-columns: auto auto;
+  column-gap: 70%;
+  justify-content: center;
+  position: relative;
+  top: 10rem;
+}
+.exam main .quiz-container .nav-buttons button{
+  background-color: orange;
+  width: 7rem;
+  height: 3rem;
+  color: white;
+  border-radius: 3rem;
+  font-size: 1rem;
+}
+.exam main .quiz-container .nav-buttons button:hover{
+  background-color:  #ffffff;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+  color:orange;
+}
+/*_________________________________________main tunit1 listening________________________________________*/
+.exam main .quiz-container1 .img .options {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid gray; /* ขอบสีเทาตามปกติ */
+  transition: 0.3s;
+}
+
+/* เมื่อมีการเลือก input ใน options */
+.exam main .quiz-container1 .img .options input[type="radio"]:checked + label {
+  color: orange; /* เปลี่ยนสีข้อความเป็นสีส้ม */
+  font-weight: bold;
+}
+
+/* เปลี่ยนขอบของ options เมื่อมีการเลือก */
+.exam main .quiz-container1 .img .options input[type="radio"]:checked + label::before {
+  border: 2px solid orange;
+}
+
+/* ปรับขนาดและดีไซน์ของ radio button */
+.exam main .quiz-container1 .img .options input[type="radio"] {
+  display: none; /* ซ่อน radio ปกติ */
+}
+
+/* สร้าง radio button แบบ custom */
+.exam main .quiz-container1 .img .options label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* วงกลม radio */
+.exam main .quiz-container1 .img .options label::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid gray; /* ขอบเริ่มต้นเป็นสีเทา */
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+/* เมื่อเลือก radio เปลี่ยนสีเป็นส้ม */
+.exam main .quiz-container1 .img .options input[type="radio"]:checked + label::before {
+  background-color: orange;
+  border-color: orange;
+}
+
+/*_________________________________________tunit reading________________________________________*/
+.quiz-container2{
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-container2 form{
+  margin: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+.exam main .quiz-container2 .timer{
+  width: 80%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: right;
+  font-weight: 700;
+}
+.quiz-container2 form .question{
+  margin: 1rem;
+}
+.quiz-container2 form .readtext{
+  word-wrap: break-word;
+  display: flex;
+  flex-flow: row wrap;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+.quiz-container2 h3{
+  font-weight: 500;
+  font-size: 3vh;
+  margin-bottom: 1rem;
+}
+.quiz-container2 h4{
+  font-weight: 500;
+  font-size: 2.5vh;
+  margin-top: 1.5rem;
+}
+.quiz-container2 form .readtext p{
+  font-size: 2vh;
+  margin: 1rem;
+}
+.exam main .quiz-container2 .nav-buttons{
+  width: 100%;
+  display: flex;
+  grid-template-columns: auto auto;
+  column-gap: 70%;
+  justify-content: center;
+  position: relative;
+  top: 10%;
+}
+.exam main .quiz-container2 .nav-buttons button{
+  background-color: orange;
+  width: 7rem;
+  height: 3rem;
+  color: white;
+  border-radius: 3rem;
+  font-size: 1rem;
+}
+.exam main .quiz-container2 .nav-buttons button:hover{
+  background-color:  #ffffff;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
+  color:orange;
+}
+table ,th,td{
+  border:1px solid #000000;
+}
+/*_________________________________________signin________________________________________*/
+.exam main .quiz-container .signin{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.exam main .quiz-container .signin p{
+  font-weight: 600;
+  display: flex;
+}
+.exam main .quiz-container .signin .input-signin{
+  width: 80%;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.exam main .quiz-container .signin .input-signin p{
+  font-size: 1rem;
+}
+.exam main .quiz-container .signin .input-signin input{
+  border-radius: 1rem;
+  width: 90%;
+  height: 3rem;
+  margin-left: 2rem;
+  background-color: #ffffff;
+}
+.exam main .quiz-container .signin .time{
+  font-size: 1rem;
+}
+
+.library-btn {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 1000; /* ให้อยู่ด้านบนเสมอ */
+  display: flex;
+  flex-direction: column; /* เรียงปุ่มในแนวตั้ง */
+  gap: 10px; /* เว้นระยะห่างระหว่างปุ่ม */
+}
+
+.library-btn button {
+  background-color: orange;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.library-btn button:hover {
+  background-color: #28a745; /* ใช้สีเขียวเมื่อ hover */
+  transform: scale(1.05);
+}
+
+/* ปรับขนาดปุ่มให้เหมาะสมกับหน้าจอเล็ก */
+@media (max-width: 768px) {
+  .library-btn button {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+}
+
+.word-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.word-card {
+  border: 2px solid #4CAF50; /* สีเขียว */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  width: 80%;
+  max-width: 500px;
+  margin-bottom: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.word-card h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.word-card h4 {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.word-card audio {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.excer {
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px; /* กำหนดให้ขนาดการ์ดกว้างขึ้น */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
