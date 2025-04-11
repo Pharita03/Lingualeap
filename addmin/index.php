@@ -22,15 +22,16 @@
         <div class="mainbox">
             <div class="box3"></div>
             <div class="subbox3">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut congue lacus. Donec consectetur justo neque, sed ullamcorper justo tristique ut. Nullam sollicitudin condimentum lectus eget vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam tempus viverra diam in viverra. Vestibulum accumsan, mi in varius aliquam, augue lacus hendrerit lorem, eget condimentum nisi massa sed ex. Ut quis fringilla dolor, vel iaculis nisi. Phasellus quis sagittis risus. Integer nunc urna, semper a pellentesque id, dictum sit amet est. Donec mollis ligula non mauris consequat scelerisque quis et eros. Aliquam euismod consequat ligula, vel aliquet lacus cursus sed. Pellentesque eget dolor justo.</h2>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut congue lacus. Donec consectetur justo neque, sed ullamcorper justo tristique ut. </h2>
             </div>
-            <div class="masteroftoeic">
-                <img src="../image/welcomelingualeap.png"  style="width: 100%;" class="logo">
-            </div>
-            <div class="subbox4">
-                <div class="start">
-                    <a href="../unit/unit1.php"><h1>Let's start</h1></a>
+            <div class="start">
+            <a href="../unit/unit1.php" class="button-link">Let's start</a>
                 </div>
+            <div class="masteroftoeic"></div>
+            <div class="subbox4">
+            <div class="subbox3">
+                        <h2> Your First Step to Confident English</h2>
+                    </div>
                 <div class="course">
                     <div class="box4">
                         <div class="card" onclick="window.location.href='../subunit/grammar.php'">
