@@ -20,7 +20,7 @@
     <header>
         <div class="box1">
             <button class='bx bx-menu' name="menu" onclick="sidebar()"style="cursor: pointer" id="menu"  display= flex align-items= center ></button>
-            <img src="../image/logo.jpg"  style="height: 5rem; " class="logo">
+            <a href="../addmin/index.php"><img src="../image/logo.jpg"  style="height: 5rem; " class="logo"></a>
         </div>
         <div class="box2">
         </div>
