@@ -20,34 +20,48 @@
         <?php include '../addmin/sidebar.php'; ?>
         <main>
         <div class="mainbox">
-            <div class="box3"></div>
-            <div class="course">
-    <div class="box4">
-        <div class="card" onclick="window.location.href='../subunit/grammar.php'">
-            <i class='bx bx-book'></i>
-            <a href="../subunit/grammar.php"><h3>Grammar</h3></a>
-        </div>
-    </div>
-    <div class="box4">
-        <div class="card" onclick="window.location.href='../subunit/listening.php'">
-            <i class='bx bx-headphone'></i>
-            <a href="../subunit/listening.php"><h3>Listening</h3></a>
-        </div>
-    </div>
-    <div class="box4">
-        <div class="card" onclick="window.location.href='../subunit/reading.php'">
-            <i class='bx bx-book-reader'></i>
-            <a href="../subunit/reading.php"><h3>Reading</h3></a>
-        </div>
-    </div>
-    <div class="box4">
-        <div class="card" onclick="window.location.href='../subunit/vocab.php'">
-            <i class='bx bx-font'></i>
-            <a href="../subunit/vocab.php"><h3>Vocabulary</h3></a>
-        </div>
-    </div>
-</div>
-
+            <div class="Box3">
+                <img src="../image/indexweb.jpg" class="easy">
+            </div>
+            <div class="subbox3">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut congue lacus. Donec consectetur justo neque, sed ullamcorper justo tristique ut. </h2>
+            </div>
+            <div class="start">
+            <a href="../unit/unit1.php" class="button-link">Let's start</a>
+                </div>
+            <div class="masteroftoeic">
+            </div>
+            <div class="subbox4">
+                <div class="subbox3">
+                            <h2> Your First Step to Confident English</h2>
+                </div>
+                    <div class="course">
+                        <div class="box4">
+                            <div class="card" onclick="window.location.href='../subunit/grammar.php'">
+                                <i class='bx bx-book'></i>
+                                <a href="../subunit/grammar.php"><h3>Grammar</h3></a>
+                            </div>
+                        </div>
+                        <div class="box4">
+                            <div class="card" onclick="window.location.href='../subunit/listening.php'">
+                                <i class='bx bx-headphone'></i>
+                                <a href="../subunit/listening.php"><h3>Listening</h3></a>
+                            </div>
+                        </div>
+                        <div class="box4">
+                            <div class="card" onclick="window.location.href='../subunit/reading.php'">
+                                <i class='bx bx-book-reader'></i>
+                                <a href="../subunit/reading.php"><h3>Reading</h3></a>
+                            </div>
+                        </div>
+                        <div class="box4">
+                            <div class="card" onclick="window.location.href='../subunit/vocab.php'">
+                                <i class='bx bx-font'></i>
+                                <a href="../subunit/vocab.php"><h3>Vocabulary</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </main>
 </body>
