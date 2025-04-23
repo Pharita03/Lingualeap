@@ -20,8 +20,10 @@
 <?php include '../addmin/head.php'; ?>
 <?php include '../addmin/sidebar.php'; ?>
     <main>
+        <div class="banner-img">
+        </div>
+        <div class="text"><h3>All course</h3></div>
         <div class="couse">
-            <div class="text"><h3>All course</h3></div>
             <div class="allunit">
                 <div class="Unit1" onclick="window.location.href='../unit/unit1.php'">
                     <a href="../unit/unit1.php"><h3></h3></a>
@@ -38,8 +40,21 @@
                 <div class="Unit5" onclick="window.location.href='../unit/unit5.php'">
                     <a href="../unit/unit5.php"><h3></h3></a>
                 </div>
-            </div>
-        </div>
+                <div class="Unit6" onclick="window.location.href='../unit/unit6.php'">
+                    <a href="../unit/unit6.php"><h3></h3></a>
+                </div>
+                <div class="Unit7" onclick="window.location.href='../unit/unit7.php'">
+                    <a href="../unit/unit7.php"><h3></h3></a>
+                </div>
+                <div class="Unit8" onclick="window.location.href='../unit/unit8.php'">
+                    <a href="../unit/unit8.php"><h3></h3></a>
+                </div>
+                <div class="Unit9" onclick="window.location.href='../unit/unit9.php'">
+                    <a href="../unit/unit9.php"><h3></h3></a>
+                </div>
+                <div class="Unit10" onclick="window.location.href='../unit/unit10.php'">
+                    <a href="../unit/unit10.php"><h3></h3></a>
+                </div>
     </main>
     <footer style="display:none;">
         <div class="end">
