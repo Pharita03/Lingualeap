@@ -1,3 +1,7 @@
+<?php
+    require("../component/connect.php");
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +28,13 @@
                 <img src="../image/indexweb.jpg" class="easy">
             </div>
             <div class="subbox3">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut congue lacus. Donec consectetur justo neque, sed ullamcorper justo tristique ut. </h2>
+                <h2><?php
+                    if (isset($_SESSION['username'])) {
+                        echo "Welcome, " . $_SESSION['username'] . "!";
+                    } else {
+                        echo "Welcome to the Master of TOEIC!";
+                    }
+                ?></h2>
             </div>
             <div class="start">
             <a href="../unit/unit1.php" class="button-link">Let's start</a>
