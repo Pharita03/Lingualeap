@@ -1,3 +1,7 @@
+<?php
+    require("../component/connect.php");
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +27,16 @@
             <a href="../addmin/index.php"><img src="../image/logo.jpg"  style="height: 5rem; " class="logo"></a>
         </div>
         <div class="box2">
+        </div>
+        <div class="login">
+            <?php
+                if (isset($_SESSION['username'])) {
+                    echo "<h3>" . $_SESSION['username'] . "</h3>";
+                } else {
+                    echo '<a href="../addmin/login.php">Log in</a>';
+                }
+            ?>
+            
         </div>
     </header>
     <div class="sidebar"  id="sidebar" style="display: none;">
