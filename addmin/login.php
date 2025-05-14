@@ -1,22 +1,35 @@
 <?php
     require("../component/connect.php");
-?>
-<?php
-    if(isset($_POST['login'])){
+    session_start();
+    
+    if (isset($_POST['login'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        // Check if the username and password match
-        $sql = "SELECT * FROM `user` WHERE `email`='$email' AND `password`='$password'";
-        $result = mysqli_query($conn, $sql);
-        if(mysqli_num_rows($result) > 0){
-            header("Location: index.php?loginsuccess");
-            exit();
-        }else{
-            echo "<script>alert('Invalid username or password');</script>";
+        
+        $sql = "SELECT * FROM `user` WHERE `email` = '$email'";
+        $result = mysqli_query($connection, $sql);
+
+        if ($result && mysqli_num_rows($result) > 0) {
+            $row = mysqli_fetch_assoc($result); 
+
+          
+            if (password_verify($password, $row['password'])) {
+                $_SESSION['email'] = $row['email'];
+                $_SESSION['username'] = $row['name']; 
+                header("Location: index.php?loginsuccess");
+                exit();
+            } else {
+                echo "<script>alert('Incorrect password.');</script>";
+                $_SESSION['username'] = $row['name']; 
+                header("Location: index.php?loginsuccess");
+            }
+        } else {
+            echo "<script>alert('Email not found.');</script>";
         }
     }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
