@@ -45,6 +45,13 @@
                 <li><a href="../addmin/index.php"><i class='bx bx-home'></i>Home</a></li>
                 <li><a href="../addmin/All_Couse.php"><i class='bx bx-book'></i>Course</a></li>
                 <li><a href="../addmin/test.php"><i class='bx bx-message-square'></i>Test</a></li>
+                <?php
+                    if (isset($_SESSION['username'])) {
+                        echo '<li><a href="../addmin/logout.php"><i class="bx bx-log-out"></i>Log out</a></li>';
+                    } else {
+                        echo '<li><a href="../addmin/login.php"><i class="bx bx-log-in"></i>Log in</a></li>';
+                    }
+                ?>
             </ul>
         </menu>
     </div>
