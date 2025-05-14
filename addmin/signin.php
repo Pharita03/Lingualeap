@@ -1,32 +1,42 @@
 <?php
-    require("../component/connect.php");
-?>
-<?php
-    session_start();
-    if(isset($_POST['signin'])){
-        $username = $_POST['username'];
-        $surname = $_POST['surname'];
-        $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $faculty = $_POST['faculty'];
-        $branch = $_POST['branch'];
-        $password = $_POST['password'];
-        $passwordHASH = password_hash($password, PASSWORD_DEFAULT);
-        $profile = $_FILES['profile']['name'];
-        $profile_tmp = $_FILES['profile']['tmp_name'];
+require("../component/connect.php");
+session_start();
 
-        // Move the uploaded file to the desired location
-        move_uploaded_file($profile_tmp, "../upload/".$profile);
-        
-        // Insert into database
-        $sql = "INSERT INTO `user`(`name`,`surname`, `email`,`tel`,`faculty`,`branch`, `password`, `profile`) VALUES ('$username','$surname','$email','$phone','$faculty','$branch','$passwordHASH','$profile')";
-        mysqli_query($connection, $sql);
-        $_SESSION['username'] = $username;
-        header("Location: index.php?uploadsuccess");
+if (isset($_POST['signin'])) {
+    // ดึงค่าจากฟอร์ม
+    $username = mysqli_real_escape_string($connection, $_POST['username']);
+    $surname = mysqli_real_escape_string($connection, $_POST['surname']);
+    $email = mysqli_real_escape_string($connection, $_POST['email']);
+    $phone = mysqli_real_escape_string($connection, $_POST['phone']);
+    $faculty = mysqli_real_escape_string($connection, $_POST['faculty']);
+    $branch = mysqli_real_escape_string($connection, $_POST['branch']);
+    $password = $_POST['password'];
+    $passwordHASH = password_hash($password, PASSWORD_DEFAULT);
+
+    // ตรวจสอบว่าอีเมลนี้มีอยู่แล้วหรือไม่
+    $check_sql = "SELECT * FROM `user` WHERE `email` = '$email'";
+    $check_result = mysqli_query($connection, $check_sql);
+    if (mysqli_num_rows($check_result) > 0) {
+        echo "<script>alert('Email นี้ถูกใช้ไปแล้ว');</script>";
         exit();
     }
 
+   
 
+
+
+    // Insert ข้อมูลผู้ใช้
+    $sql = "INSERT INTO `user`(`name`, `surname`, `email`, `tel`, `faculty`, `branch`, `password`) 
+            VALUES ('$username','$surname','$email','$phone','$faculty','$branch','$passwordHASH')";
+    
+    if (mysqli_query($connection, $sql)) {
+        $_SESSION['username'] = $username;
+        header("Location: index.php?uploadsuccess");
+        exit();
+    } else {
+        echo "<script>alert('เกิดข้อผิดพลาดในการบันทึกข้อมูล');</script>";
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -82,8 +92,7 @@
                 </select>
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" required>
-                <label for="profile">Profile</label>
-                <input type="file" name="profile" id="profile" required>
+                
             </div>
             <div class="form-group">
                 <input type="submit" name="signin" value="Sign In">
