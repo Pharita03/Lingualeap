@@ -124,6 +124,218 @@ menu li i{
   margin-right: 15px;
   
 }
+.login1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: orange; /* สีเขียว */
+    margin: 10px;
+}
+
+.login1 a {
+    color: orange; /* สีเขียวลิงก์ */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login1 a:hover {
+    color: #388E3C; /* เขียวเข้มขึ้นตอน hover */
+    
+}
+
+/*_________________________________________LOG iN________________________________________*/
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+}
+
+.login {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-home i {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+/* ✅ Responsive design */
+@media (max-width: 600px) {
+    .login {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .back-home {
+        font-size: 14px;
+    }
+
+    .back-home i {
+        font-size: 18px;
+    }
+}
+/*_________________________________________Sing in________________________________________*/
+body.signin-page {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.signin {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signin h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+    background-color: #43a047;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .signin {
+        padding: 25px 20px;
+    }
+
+    .signin h2 {
+        font-size: 24px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-home i {
+    margin-right: 8px;
+    font-size: 30px;
+}
 /*_________________________________________Mainhome________________________________________*/
 .index {
 width: 100%;

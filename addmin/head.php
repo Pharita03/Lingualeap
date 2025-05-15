@@ -28,7 +28,7 @@
         </div>
         <div class="box2">
         </div>
-        <div class="login">
+        <div class="login1">
             <?php
                 if (isset($_SESSION['username'])) {
                     echo "<h3>" . $_SESSION['username'] . "</h3>";

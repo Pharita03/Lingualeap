@@ -56,9 +56,13 @@ if (isset($_POST['signin'])) {
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
     </style>
+    <body class="signin-page">
 </head>
 <body>
     <div class="signin">
+        <a href="../addmin/login.php" class="back-home">
+            <i class='bx bx-left-arrow-alt'></i>
+        </a>
         <form action="" method="post">
             <h2>Sign In</h2>
             <div class="form-group">

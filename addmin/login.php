@@ -45,12 +45,15 @@
     <!-- Font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
     </style>
+    <body class="login-page">
 </head>
 <body>
     <main>
         <div class="login">
+            <a href="../addmin/index.php" class="back-home">
+                <i class='bx bx-x'></i> 
+            </a>
             <form action="" method="post">
                 <h2>Log in</h2>
                 <div class="form-group">
