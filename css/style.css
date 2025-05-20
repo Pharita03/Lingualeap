@@ -1694,187 +1694,122 @@ margin-bottom: 20px;
 
 
 /*_________________________________________main unit1 vocabulary________________________________________*/
-.volcab{
-width: 100%;
-height: 100%;
-background-color: var(--white);
+/* สำหรับหน้าเริ่มต้น */
+#start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../image/all course.png') no-repeat center center fixed;
+    background-size: cover;
 }
-.volcab .boxvol{
-display: flex;
-flex-direction: row;
-flex-flow: row wrap;
-margin-top: 7rem;
-width: 100%;
-height: 30rem;
+
+/* ปุ่ม Get Start */
+#start {
+    display: flex;
+    justify-content: center; 
+    padding: 1rem;
+}
+
+#start .btn1 {
+    background-color: #ff9800;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+/* Responsive สำหรับหน้าจอเล็ก (เช่น มือถือ) */
+@media (max-width: 768px) {
+    #start {
+        justify-content: center; /* ปุ่มอยู่ตรงกลางบนมือถือ */
+    }
+
+    #start .btn1 {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
 }
 
 
-.volcab .boxvol .box5 .bannervolcab {
-display: flex;
-flex-direction: column;
-flex-flow: column wrap;
-width: 100%;
-height: 50%;
-background-color: #ebe9e9;
-text-align: center;
-justify-content: center;
-justify-items: center;
-align-items: center;
+/* กล่องคำศัพท์ */
+.voc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
-.volcab .boxvol .box5 .bannervolcab {
-display: flex;
-width: 100%;
-height: 50vh;
-background-image: url("../image/welcomevocab.png");
-background-size: 100% auto;
-background-position: top;
-background-repeat: no-repeat;
-align-items: flex-start;
-justify-content: center;
-margin-top: -25px;
-margin-bottom: 20px;
+.excer {
+    width: 100%;
+    padding: 2rem;
+    margin: 80px;
+    background-color: #ffffff;
+    border: 2px solid #def3e5;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-.volcab .boxvol .Box5{
-display: flex;
-flex-direction: row;
-flex-flow: row wrap;
-width: 100%;
-height: 100%;
-justify-content: center;
-justify-items: center;
-align-items: center;
-}
-.volcab .boxvol .Box5 .VDO {
-width: 100%;
-height: 200%;
-display: flex;
-justify-content: center;
-justify-items: center;
-align-items: center;
-background-size: contain;
-background-position: center;
-flex-direction: column;
-background-image: url("../image/welcomevocab (2).jpg");
-word-wrap: break-word;
-position: relative;
-}
-.volcab .boxvol .Box5 .VDO .Test{
-display: flex;
-position: relative;
+/* ปุ่ม next/back/return */
+.btnn {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
-.volcab .boxvol .Box5 .VDO .Test .bg{
-display: flex;
-justify-content: center;
-width: 100%;
-height: 100%;
-justify-items: center;
-align-items: center;
-position: relative;
+.btnn .btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 120px;
 }
-.volcab .boxvol .Box5 .VDO .Test h3{
-font-size: 2vw;
-color: var(--shadygrey);
-font-weight: 500;
-}
-.volcab .boxvol .Box5 .VDO .Test .btn{
-background-color: white;
-width: 20rem;
-height: 5rem;
-border-radius: 20rem;
-position: relative;
-bottom: -200%;
-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
-cursor: pointer;
-h2{
-  color: orange;
-}
-}
-.volcab .boxvol .subdetail h2{
-font-size: 3rem;
-color: #ffffff;
-font-weight: 500;
-margin-right: 2rem;
-}
-.volcab .boxvol .subdetail h3{
-color: #ffffff;
-font-weight: 500;
-}
-.boxvol .voc{
-width: 100% ;
-height: 100%;
-display:flex;
-justify-content: center;
-justify-items: center;
-align-items: center;
-}
-.boxvol .voc .excer{
-width: 100%;
-height: 150%;
-display: flex;
-justify-content: center;
-justify-items: center;
-align-items: center;
-flex-direction: column;
-background-image: url("../image/bgunit.png");
-background-size: cover;
-}
-.hidden{
-display: none;
-}
-.boxvol .voc .excer .vol{
-font-size: 10vh;
-margin: 2rem;
-display: flex;
-justify-content: center;
-}
-.boxvol .voc .excer .meaning{
-font-size: 3vh;
-font-weight: 400;
-margin-left: 2rem;
-margin-right: 2rem;
-display: flex;
-justify-content: center;
 
+.btnn .btn:hover {
+    background-color: #388e3c;
 }
-.boxvol .voc .excer .sample{
-font-size: 2vh;
-font-weight: 400;
-display: flex;
-justify-content: center;
 
-margin: 2rem;
+#return-btn a {
+    color: white;
+    text-decoration: none;
 }
-.boxvol .voc .excer audio{
-display: flex;
-margin: 2rem;
+
+/* ปุ่มหน่วย */
+.library-btn {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
 }
-.boxvol .voc .btnn{
-display: flex;
-grid-template-columns: auto auto;
-column-gap: 70%;
-width: 100%;
-justify-content: center;
-position: relative;
-bottom: 5%;
+
+.library-btn button {
+    background-color: #1976d2;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
-.boxvol .voc .btnn .btn{
-background-color: var(--green);
-width: 7rem;
-height: 3rem;
-border-radius: 2rem;
-justify-content: center;
-align-items: center;
+
+.library-btn button:hover {
+    background-color: #1565c0;
 }
-.boxvol .voc .btnn .btn:hover{
-background-color: orange;
-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.312);
-h2{
-  color: rgb(255, 255, 255);
-}
-}
+
+
 
 /*_________________________________________main test unit1 reading________________________________________*/
 .exam{
