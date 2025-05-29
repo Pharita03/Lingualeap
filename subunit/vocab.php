@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>home</title>
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <link rel="icon" type="image/png" href="../image/logo.jpg">
-  <!-- Boxicon -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!-- Font Awesome -->
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../image/logo.jpg">
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CDN link -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'>
+    <!-- Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
     body {
       font-family: 'Poppins';
@@ -129,7 +130,88 @@
           </div>
         </div>
 
-        <!-- ... เพิ่มคำศัพท์ได้ตามต้องการ จนถึง id="10" -->
+        <div class="excer" id="3">
+          <h3 class="vol">Determine (v.)</h3>
+          <h4 class="meaning">To establish or decide something</h4>
+          <audio controls><source src="../voice/Determine.m4a" type="audio/mpeg"></audio>
+          <h4 class="sample">Sample: We need to determine the best course of action before proceeding.</h4>
+          <div class="pagination-controls">
+            <span class="page-indicator"><span id="page-counter">10/10</span></span>
+            <button class="nav-btn prev"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+            <button class="nav-btn next">Next <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="excer" id="4">
+          <h3 class="vol">Revise (v.)</h3>
+          <h4 class="meaning">To review and make changes to improve something</h4>
+          <audio controls><source src="../voice/Revise.m4a" type="audio/mpeg"></audio>
+          <h4 class="sample">Sample: I&#39;ll revise my essay tonight to incorporate the feedback from my professor.</h4>
+          <div class="pagination-controls">
+            <span class="page-indicator"><span id="page-counter">10/10</span></span>
+            <button class="nav-btn prev"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+            <button class="nav-btn next">Next <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="excer" id="5">
+          <h3 class="vol">Subscription (n.)</h3>
+          <h4 class="meaning">An arrangement to receive something regularly, often by paying in advance</h4>
+          <audio controls><source src="../voice/Subscription.m4a" type="audio/mpeg"></audio>
+          <h4 class="sample">Sample: She worked hard to achieve her dream of becoming a doctor.</h4>
+          <div class="pagination-controls">
+            <span class="page-indicator"><span id="page-counter">10/10</span></span>
+            <button class="nav-btn prev"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+            <button class="nav-btn next">Next <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="excer" id="6">
+          <h3 class="vol">Purpose (n.)</h3>
+          <h4 class="meaning">The reason for which something is done or created</h4>
+          <audio controls><source src="../voice/Purpose.m4a" type="audio/mpeg"></audio>
+          <h4 class="sample">Sample: The purpose of this meeting is to discuss our quarterly goals.</h4>
+          <div class="pagination-controls">
+            <span class="page-indicator"><span id="page-counter">10/10</span></span>
+            <button class="nav-btn prev"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+            <button class="nav-btn next">Next <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="excer" id="7">
+          <h3 class="vol">Publication (n.)</h3>
+          <h4 class="meaning">The act of making information available to the public</h4>
+          <audio controls><source src="../voice/Publication.m4a" type="audio/mpeg"></audio>
+          <h4 class="sample">Sample: The publication of her research findings brought her international recognition.</h4>
+          <div class="pagination-controls">
+            <span class="page-indicator"><span id="page-counter">10/10</span></span>
+            <button class="nav-btn prev"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+            <button class="nav-btn next">Next <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="excer" id="8">
+          <h3 class="vol">Serve (v.)</h3>
+          <h4 class="meaning">To perform duties or provide services for someone</h4>
+          <audio controls><source src="../voice/Serve.m4a" type="audio/mpeg"></audio>
+          <h4 class="sample">Sample: The restaurant aims to serve fresh, locally-sourced meals to its customers.</h4>
+          <div class="pagination-controls">
+            <span class="page-indicator"><span id="page-counter">10/10</span></span>
+            <button class="nav-btn prev"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+            <button class="nav-btn next">Next <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="excer" id="9">
+          <h3 class="vol">Information (n.)</h3>
+          <h4 class="meaning">Facts or details about something</h4>
+          <audio controls><source src="../voice/Information.m4a" type="audio/mpeg"></audio>
+          <h4 class="sample">Sample: Please provide all relevant information when filling out the application form.</h4>
+          <div class="pagination-controls">
+            <span class="page-indicator"><span id="page-counter">10/10</span></span>
+            <button class="nav-btn prev"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+            <button class="nav-btn next">Next <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
 
         <div class="excer" id="10">
           <h3 class="vol">Obey (v.)</h3>
